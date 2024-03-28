@@ -1,11 +1,15 @@
 import React from 'react'
+import { navigationMenu } from './NavigationMenu'
 
 function Navigation() {
   return (
     <div className='h-screen sticky top-0' >
         <div>
-            <div>
-                <img src='https://www.flaticon.com/free-icon/cardiogram_835378?term=heart+rate&page=1&position=2&origin=search&related_id=835378' alt='heart rate' />
+            <div className='py-5'>
+                <img src='logo.png' alt='logo' height={50} width={50} />
+            </div>
+            <div className='space-y-6'>
+                {navigationMenu}
             </div>
         </div>
     </div>
